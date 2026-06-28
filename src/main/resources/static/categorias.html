@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Categorías - Mueblería Online</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="container mt-5">
+
+    <div class="d-flex justify-content-between align-items-center mb-4">
+
+        <div>
+            <h2>🏷 Gestión de Categorías</h2>
+            <p class="text-muted">Administración de categorías de productos.</p>
+        </div>
+
+        <a href="index.html" class="btn btn-outline-secondary">
+            ← Inicio
+        </a>
+
+    </div>
+
+    <div class="card p-4 mb-4">
+
+        <h4>Nueva Categoría</h4>
+
+        <div class="mb-3">
+            <label class="form-label">Nombre</label>
+
+            <input
+                type="text"
+                id="nombre"
+                class="form-control"
+                placeholder="Ingrese el nombre de la categoría">
+        </div>
+
+        <button class="btn btn-primary" onclick="guardarCategoria()">
+            Guardar Categoría
+        </button>
+
+    </div>
+
+    <div class="card p-4">
+
+        <h4>Listado de Categorías</h4>
+
+        <table class="table table-striped">
+
+            <thead>
+
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+            </tr>
+
+            </thead>
+
+            <tbody id="tablaCategorias">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+
+<script src="js/categorias.js"></script>
+
+</body>
+
+</html>
